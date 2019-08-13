@@ -7,5 +7,9 @@
 # }
 
 def select_winner(passengers)
-  # add the code snippet here!
+  winner = ""
+  passengers.each do |key, val|
+    winner << val if key == :suite_a && val.start_with?("A")
+  end 
+  winner
 end
